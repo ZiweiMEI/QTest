@@ -50,6 +50,8 @@ gamma <- matrix(c(rep(0.5,10),rep(0,pz-10)),ncol = 1)
 
 beta = 1 
 
+set.seed(2022)
+
 ## covariates and instruments 
 W <- MASS::mvrnorm(n=n, rep(1, p), Sigma)
 if (px == 0){

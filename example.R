@@ -22,7 +22,9 @@ psi <- c(seq(0.3,0.7,0.1),rep(0,145))
 s1 = 10 # num of relevant IV
 gamma <- matrix(c(rep(0.5,10),rep(0,pz-10)),ncol = 1)
 
-beta = 1 
+beta = 1
+
+set.seed(2022)
 
 ## covariates and instruments 
 W <- MASS::mvrnorm(n=n, rep(1, p), Sigma)
