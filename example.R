@@ -41,6 +41,7 @@ err <- MASS::mvrnorm(n=n, rep(0, 2), matrix(1.5 * c(1, .5, .5,1),2))
 e <- err[,1]
 eps2 <- err[,2]
 
+## Test result with valid instruments 
 
 D <-  X%*%psi  + Z %*% gamma + eps2
 Y <-   D*beta + X%*%phi + e
@@ -55,6 +56,8 @@ QTest(Y,D,Z,X)
 # 
 # $pval
 # [1] 0.6518306
+
+## Test result with invalid instruments 
 
 pi <-  c(seq(0.1,1,0.1),rep(0,90))
 Y <- D*beta + X%*%phi + Z %*% pi + e
