@@ -47,8 +47,25 @@ Y <-   D*beta + X%*%phi + e
 
 QTest(Y,D,Z,X) 
 
+# $invalid
+# [1] FALSE
+# 
+# $sig.level
+# [1] 0.05
+# 
+# $pval
+# [1] 0.6518306
+
 pi <-  c(seq(0.1,1,0.1),rep(0,90))
 Y <- D*beta + X%*%phi + Z %*% pi + e
 
 QTest(Y,D,Z,X) 
 
+# $invalid
+# [1] TRUE
+# 
+# $sig.level
+# [1] 0.05
+# 
+# $pval
+# [1] 9.769963e-15
