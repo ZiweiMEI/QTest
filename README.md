@@ -12,11 +12,11 @@ install.pacakges(c("glmnet,MASS,igraph"))
 In addition, users need to install the "Rmosek" package manually. The instructions for installation are available at  [Installation of MOSEK Rmosek package.](https://docs.mosek.com/latest/rmosek/install-interface.html)
 
 
-"Lasso.R" and "Projection.R" contain necessary R functions for Lasso estimators and projection vectors for bias correction. 
+"Lasso.R" and "Projection.R" contain necessary R functions for Lasso estimators and projection direction vectors for bias correction. 
 
 "QTest.R" is the function to implement the Q test.
 
-"example.R" provides an application example that is shown below.  
+"example.R" provides an example that is shown below.  
 
 
 ## Example
