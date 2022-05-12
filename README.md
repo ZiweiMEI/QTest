@@ -1,6 +1,6 @@
 # The Q Test 
 
-This is the github repo for the Q test proposed by Fan et al. (2022) that tests overidentifying restrictions (or instrumental variable validity) with high-dimensional data, which is robust to heteroskedastic errors. The method is called the Q test since it is based on estimation and inference for quadratic functionals of high-dimensional vectors.
+This is the github repo for the Q test proposed by Fan et al. (2022) that tests overidentifying restrictions (or instrumental variable validity) with high-dimensional data, which is robust to heteroskedastic errors. The method is called the Q test since it is based on estimation and inference for quadratic functionals of high-dimensional vectors. The paper is available at https://arxiv.org/abs/2205.00171.
 
 ## Required packages 
 
@@ -101,3 +101,7 @@ QTest(Y,D,Z,X)
 # $pval
 # [1] 9.769963e-15
 ```
+
+## Reference 
+
+Fan, Q., Guo, Z., & Mei, Z. (2022). Testing Overidentifying Restrictions with High-Dimensional Data and Heteroskedasticity. arXiv preprint arXiv:2205.00171.
